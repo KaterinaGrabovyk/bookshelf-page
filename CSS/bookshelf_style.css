@@ -1,0 +1,146 @@
+*{ 
+    box-sizing: border-box;
+}
+.bf1,
+.bf1a,
+.bf2
+{
+    border: 1px solid black;
+}
+.bf2a,
+.bf2b{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+:root{
+    --main-book-color1:rgb(254, 119, 0);
+    --main-book-color2:rgb(0, 254, 63);
+    --add-book-color1:rgb(254, 38, 0);
+    --add-book-color2:rgb(33, 222, 3);
+    --add-book-color3:rgb(3, 222, 182);
+
+    --main-book-color3:rgb(38, 61, 228);
+    --main-book-color4:rgb(70, 226, 231);
+    --add-book-color4:rgb(225, 11, 136);
+    --add-book-color5:rgb(234, 17, 17);
+    --add-book-color6:rgb(239, 245, 57);
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    
+   justify-content: center;
+   align-items: center;
+}
+/*BOOKSHELF*/
+.bookshelf_body {
+    width:1202px;
+    height: 600px;
+    display: flex;
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.bookshelf_border {
+    width:300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.bookshelf_section{
+    width:88%;
+    height: 88%;
+    background-color:brown;
+}
+/*BOOKS INSIDE*/
+.books {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.book {
+    width: 20%;
+    height: 80%;
+    position: relative;
+    top: 20%;
+}
+/*BOOK FORM VERSION 1*/
+.bf1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bf1a {
+    height: 80%;
+    width: 50%;
+   
+}
+/*BOOK FORM VERSION 2*/
+.bf2 {
+    margin-top:80%;
+    height:80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bf2root{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bf2a {
+    width: 100%;
+    height: 10%;
+    
+}
+.bf2b {
+    width: 100%;
+    height: 80%;
+    
+}
+.bc1 {
+    background-color: var(--main-book-color1);
+}
+
+.bc2 {
+    background-color: var(--main-book-color2);
+}
+.bc3{
+    background-color: var(--main-book-color3);
+}
+
+.bc4 {
+    background-color: var(--main-book-color4);
+}
+.bf1ac1 {
+    background-color: var(--add-book-color1);
+}
+.bf2ac1 {
+    background-color: var(--add-book-color2);
+}
+.bf2bc1 {
+    background-color: var(--add-book-color3);
+}
+.bf1ac2 {
+    background-color: var(--add-book-color4);
+}
+.bf2ac2 {
+    background-color: var(--add-book-color5);
+}
+.bf2bc2 {
+    background-color: var(--add-book-color6);
+}
+@media(max-width:320px){
+    .bookshelf_border {
+        width:200px;
+        height:200px;
+    }
+}
